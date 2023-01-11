@@ -24,6 +24,9 @@
       max-width: 78px;
     }
   }
+  .navbar-nav{
+    padding: 15px 0 15px 0;
+  }
   .nav-item{
     @include desktop{
       text-align: center;
@@ -34,6 +37,10 @@
       transition: all .3s ease;
       padding: 15px 18px;
       position: relative;
+
+      @include mobile{
+        border-radius: 0;
+      }
     }
     &:last-child{
       margin-left: 15px;
@@ -46,7 +53,7 @@
       height: 2px;
       width: 25px;
       transition: all 0.2s;
-      background: $primary-color;
+      background: $secondary-color;
       display: block;
       &:not(:last-child){
         margin-bottom: 5px;
