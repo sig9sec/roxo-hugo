@@ -2,6 +2,7 @@
   {{ if .enable }}
   {{ "<!-- Site Hero Start -->" | safeHTML }}
   <section class="site-hero" style="background-image: url('{{ .background_image }}');">
+    {{/*
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -34,7 +35,8 @@
         </div>
       </div>
     </div>
-    <a href="#counter" class="site-hero-scroll scroll-to">
+    */}}
+    <a href="#about" class="site-hero-scroll scroll-to">
       <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
     </a>
   </section>
