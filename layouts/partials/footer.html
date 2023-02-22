@@ -69,6 +69,15 @@
 
 <!-- {{ $formhandler := resources.Get "js/formhandler.js" | minify }}
 <script src="{{ $formhandler.Permalink }}"></script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalitycsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ .Site.Params.googleAnalitycsID }}');
+</script>
+
 {{ $vendor := resources.Get "js/vendor.js" | minify }}
 <script src="{{ $vendor.Permalink }}"></script>
 {{ $script := resources.Get "js/script.js" | minify }}
