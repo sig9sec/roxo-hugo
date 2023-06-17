@@ -19,6 +19,10 @@
             {{ end }}
             {{ if .address }}
               {{ .address | safeHTML }}
+              <br>
+            {{ end }}
+            {{ if .vat }}
+              {{ .vat | safeHTML }}
             {{ end }}
           </p>
         </div>
