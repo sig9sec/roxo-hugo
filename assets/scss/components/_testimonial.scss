@@ -1,8 +1,15 @@
 .site-testimonial{
-  background: $gray;
+  background: $white;
   padding: 100px 0;
   overflow: hidden;
+  .section-title p {
+    font-size: 35px;
+  }
+  a {
+    text-decoration: none;
+  }
   &-item{
+    height: 200px;
     background: $white;
     padding: 30px;
     margin-bottom: 30px;
@@ -14,21 +21,19 @@
       opacity: 0.4;
     }
     &-header{
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
+      display: block;
       .thumb{
-        width: 80px;
+        margin: 0 auto;
+        width: 200px;
+        height: 70px;
         img{
           width: 100%;
         }
-        margin-right: 15px;
       }
-      .person{
-        h5{
-          margin-bottom: 5px;
-        }
+      .company{
+        margin-top: 20px;
         p{
+          text-align: center;
           margin-bottom: 0;
           color: $dark-gray;
         }

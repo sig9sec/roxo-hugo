@@ -8,27 +8,25 @@
             <h2>
               {{ .title }}
             </h2>
-            <p>
-              {{ .subtitle }}
-            </p>
           </div>
         </div>
         {{ range .testimonial_item }}
-        <div class="col-lg-4 col-md-6">
-          <div class="site-testimonial-item">
-            <div class="site-testimonial-item-header">
-              <div class="thumb">
-                <img src="{{ .thumb | absURL }}" alt="user-thumb-one">
+        <div class="col-lg-6 col-md-6">
+          <a href="{{ .website | safeURL }}" target="_blank">
+            <div class="site-testimonial-item">
+              <div class="site-testimonial-item-header">
+                <div class="thumb">
+                  <img src="{{ .logo | absURL }}" alt="user-thumb-one">
+                </div>
+                <div class="company">
+                  <p>{{ .description }}</p>
+                </div>
               </div>
-              <div class="person">
-                <h5>{{ .name }}</h5>
-                <p>{{ .company_position }}</p>
-              </div>
+              <p class="site-testimonial-item-body">
+                {{ .quote }}
+              </p>
             </div>
-            <p class="site-testimonial-item-body">
-              {{ .quote }}
-            </p>
-          </div>
+          </a>
         </div>
         {{ end }}
       </div>
