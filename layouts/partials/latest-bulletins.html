@@ -1,0 +1,25 @@
+{{ with where .Site.RegularPages "Type" "bulletin" }}
+{{ if (gt (len .) 0) }}
+<section class="site-bulletin">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>Latest Security Bulletins</h2>
+        </div>
+      </div>
+      {{ range first 3 . }}
+      <div class="col-lg-6">
+        <article class="site-bulletin-post">
+          <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Plain | htmlUnescape | truncate 200 }}</p>
+          <a href="{{ .Permalink }}" class="read-more">read more</a>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

@@ -2,27 +2,31 @@ body {
   background: $body-color;
 }
 
-.section-title{
+.section-title {
   margin-bottom: 70px;
-  @include desktop{
+
+  @include desktop {
     text-align: center;
   }
-  h2{
+
+  h2 {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 15px;
-    @include desktop{
+
+    @include desktop {
       font-size: 40px;
     }
   }
-  p{
+
+  p {
     font-size: 20px;
     font-weight: 300;
   }
 }
 
-.form-control{
+.form-control {
   background: transparent;
   border-radius: 0;
   margin-bottom: 30px;
@@ -31,22 +35,24 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   height: 42px;
-  &:focus{
+
+  &:focus {
     box-shadow: none;
     background: transparent;
     border-color: $text-color;
   }
 }
 
-select.form-control{
+select.form-control {
   height: 42px !important;
   position: relative;
   appearance: none;
 }
 
-.select-wrapper{
+.select-wrapper {
   position: relative;
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     width: 16px;
@@ -60,6 +66,6 @@ select.form-control{
   }
 }
 
-textarea.form-control{
+textarea.form-control {
   height: auto;
 }

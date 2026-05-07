@@ -1,26 +1,30 @@
-.site-contact{
+.site-contact {
   padding: 220px 0 100px;
   background: $gray;
-  @include mobile{
+
+  @include mobile {
     padding: 120px 0 100px;
   }
-  &-title{
-    font-weight: 700;
-    @include tablet{
+
+  &-title {
+    @include tablet {
       font-size: 40px;
     }
   }
-  &-form{
+
+  &-form {
     margin-top: 20px;
-    h4{
-      font-weight: 300;
+
+    h4 {
       text-transform: uppercase;
       margin-bottom: 50px;
       letter-spacing: 3px;
-      @include tablet{
+
+      @include tablet {
         font-size: 20px;
       }
-      @include desktop{
+
+      @include desktop {
         margin-bottom: 70px;
       }
     }

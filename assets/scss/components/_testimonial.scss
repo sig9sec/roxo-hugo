@@ -1,47 +1,57 @@
-.site-testimonial{
+.site-testimonial {
   background: $white;
   padding: 100px 0;
   overflow: hidden;
+
   .section-title p {
     font-size: 35px;
   }
+
   a {
     text-decoration: none;
   }
-  &-item{
+
+  &-item {
     height: 200px;
     background: $white;
     padding: 30px;
     margin-bottom: 30px;
     transition: all 0.3s ease-in;
-    &.active{
+
+    &.active {
       box-shadow: 0px 30px 45px 0px rgba(0, 0, 0, 0.05);
     }
-    &.inactive{
+
+    &.inactive {
       opacity: 0.4;
     }
-    &-header{
+
+    &-header {
       display: block;
-      .thumb{
+
+      .thumb {
         margin: 0 auto;
         width: 200px;
         height: 70px;
-        img{
+
+        img {
           width: 100%;
         }
       }
-      .company{
+
+      .company {
         margin-top: 20px;
-        p{
+
+        p {
           text-align: center;
           margin-bottom: 0;
           color: $dark-gray;
         }
       }
     }
-    &-body{
+
+    &-body {
       margin-bottom: 0;
-      font-weight: 300;
     }
   }
 }
